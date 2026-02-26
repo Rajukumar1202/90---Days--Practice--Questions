@@ -1,4 +1,4 @@
-💻 PART 1 : 🧠 DAY 3 – MCQ Practice Bank (35 Questions)
+💻 PART 1 : 🧠 DAY 3 – MCQ Practice Bank (40 Questions)
 
 RECURSION BASICS
 
@@ -20,7 +20,7 @@ B) Infinite calls
 C) Sorting
 D) Compilation
 
-4. Factorial uses:
+4. Factorial commonly uses:
 A) Loop only
 B) Recursion
 C) Class
@@ -28,10 +28,9 @@ D) File
 
 5. Output?
 def f(n):
-    if n==0: return 1
-    return n*f(n-1)
+ if n==0: return 1
+ return n*f(n-1)
 print(f(3))
-
 A) 3
 B) 6
 C) 9
@@ -49,7 +48,7 @@ B) Calling same function
 C) Loop
 D) Print
 
-8. Fibonacci is example of:
+8. Fibonacci example of:
 A) Searching
 B) Recursion
 C) Sorting
@@ -69,10 +68,9 @@ D) Queue
 
 11. Output?
 def f(n):
-    if n==1: return 1
-    return f(n-1)
+ if n==1: return 1
+ return f(n-1)
 print(f(3))
-
 A) 1
 B) 2
 C) 3
@@ -96,7 +94,7 @@ B) Sorting
 C) DP
 D) All
 
-15. Recursive call stored in:
+15. Recursive calls stored in:
 A) Queue
 B) Stack
 C) Array
@@ -114,116 +112,149 @@ B) Sometimes slower
 C) Always wrong
 D) None
 
+18. Output?
+def f(n):
+ if n==0: return 0
+ return 1+f(n-1)
+print(f(3))
+A) 1
+B) 2
+C) 3
+D) Error
+
+19. Tail recursion means:
+A) Call at start
+B) Call at end
+C) No call
+D) Loop
+
+20. Recursion used in:
+A) Tree traversal
+B) Backtracking
+C) DFS
+D) All
+
 
 PANDAS BASICS
 
-18. Pandas is used for:
+21. Pandas is used for:
 A) Games
 B) Data analysis
 C) Networking
 D) OS
 
-19. Import pandas syntax?
+22. Import pandas syntax?
 A) import pandas
 B) import pandas as pd
 C) include pandas
 D) load pandas
 
-20. Pandas main structure:
+23. Pandas main structure:
 A) Array
 B) DataFrame
 C) Graph
 D) Stack
 
-21. DataFrame is:
-A) 1D data
-B) 2D data table
+24. DataFrame is:
+A) 1D
+B) 2D table
 C) Graph
 D) Loop
 
-22. Series is:
+25. Series is:
 A) 2D
 B) 1D
 C) Graph
 D) Loop
 
-23. Read CSV uses:
+26. Read CSV uses:
 A) read()
 B) open()
 C) read_csv()
 D) load()
 
-24. Output?
+27. Output?
 import pandas as pd
 df=pd.DataFrame({"A":[1,2]})
 print(df.shape)
-
 A) (2,)
 B) (2,1)
 C) (1,2)
 D) Error
 
-25. Head() shows:
+28. Head() shows:
 A) Last rows
 B) First rows
 C) Middle
 D) All
 
-26. Tail() shows:
+29. Tail() shows:
 A) First
 B) Last
 C) Middle
 D) None
 
-27. df.columns gives:
+30. df.columns gives:
 A) Rows
 B) Columns
 C) Shape
 D) Type
 
-28. Missing value called:
+31. Missing value called:
 A) Null
 B) NaN
 C) None
 D) All
 
-29. Drop duplicates uses:
+32. Drop duplicates uses:
 A) drop()
 B) remove()
 C) drop_duplicates()
 D) unique()
 
-30. Mean uses:
+33. Mean uses:
 A) avg()
 B) mean()
 C) mid()
 D) center()
 
-31. Pandas built on:
+34. Pandas built on:
 A) NumPy
 B) TensorFlow
 C) Keras
 D) Matplotlib
 
-32. df["A"] selects:
+35. df["A"] selects:
 A) Row
 B) Column
 C) Shape
 D) Index
 
-33. Pandas mainly used in:
+36. Pandas mainly used in:
 A) ML
 B) Data science
 C) Analytics
 D) All
 
-34. df.shape returns:
+37. df.shape returns:
 A) Values
 B) Dimensions
 C) Type
 D) Mean
 
-35. Pandas stands for:
+38. Fill missing values uses:
+A) fillna()
+B) replace()
+C) add()
+D) drop()
+
+39. Save dataframe uses:
+A) save()
+B) to_csv()
+C) write()
+D) export()
+
+40. Pandas stands for:
 A) Panel Data
 B) Python Data
 C) Parallel Data
@@ -231,25 +262,30 @@ D) None
 
 
 
-💻 PART 2: Coding Practice (10 Questions)
+💻 PART 2: Coding Practice (15 Questions)
 
-🟢 Level 1 – Easy
+🟢 EASY
 
-Q1. Print numbers from 5 to 1 using recursion.
-Q2. Find factorial using recursion.
-Q3. Create DataFrame and print it.
-
-
-🟡 Level 2 – Medium
-
-Q4. Fibonacci using recursion.
-Q5. Read CSV and print first 5 rows.
-Q6. Select one column from DataFrame.
+Q1. Print numbers 3 to 1 using recursion.
+Q2. Find factorial of 4.
+Q3. Create Series from [1,2,3].
+Q4. Create DataFrame from {"A":[1,2]}.
+Q5. Print first 3 rows of dataframe.
 
 
-🔴 Level 3 – Strong Logic
+🟡 MEDIUM
 
-Q7. Count recursive calls for factorial.
-Q8. Remove duplicates from DataFrame.
-Q9. Fill missing values with mean.
-Q10. Reverse string using recursion.
+Q6. Fibonacci of 5.
+Q7. Sum 1 to 5 using recursion.
+Q8. Read CSV file "data.csv".
+Q9. Select column "A" from dataframe.
+Q10. Drop duplicates from list [1,1,2,2,3].
+
+
+🔴 STRONG
+
+Q11. Reverse string "hello" using recursion.
+Q12. Count recursive calls in factorial.
+Q13. Fill missing values with mean in dataframe.
+Q14. Merge two dataframes.
+Q15. Save dataframe as "output.csv".
